@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom"; 
 import Navbar from "../components/Navbar"; 
+// import Sidebar from "../components/Sidebar";
 
 export default function MainLayout() { 
   return ( 
     <div className="flex flex-col min-h-screen"> 
       {/* Header/Navbar */} 
-      <Navbar /> 
+      <Navbar />
+      {/* < Sidebar /> */}
  
       {/* Search & Filter */} 
       <header className="bg-gray-100 p-4 flex flex-col md:flex-row gap-2 justify-between items-center"> 

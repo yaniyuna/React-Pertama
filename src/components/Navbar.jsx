@@ -15,6 +15,10 @@ export default function Navbar(){
                     Dashboard 
                 </Link> 
 
+                <Link to="/home" className="hover:text-gray-200">
+                    Home
+                </Link>
+
                 <Link to="/cart" className="hover:text-gray-200"> 
                     Keranjang 
                 </Link> 

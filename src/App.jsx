@@ -22,14 +22,7 @@ function App() {
     //     </div> 
     //   </div> 
     // </> 
-
-    // <Routes>
-    //   <Route path="/" element={<MainLayout/>} >
-    //     <Route index element={<Dashboard />} />
-    //     <Route path="product/:id" element={<ProductDetail/>} />
-    //   </Route>
-    // </Routes>
-
+    
     <Routes>
       <Route path="/" element={<MainLayout/>} >
         <Route index element={<Dashboard />} /> 
@@ -42,7 +35,6 @@ function App() {
         <Route path="dashboard" element={<AdminDashboard />} /> 
         <Route path="about" element={<AboutPage />} /> 
       </Route> 
-      
     </Routes>
 
   ); 
