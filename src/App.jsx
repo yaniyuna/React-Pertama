@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import AdminLayout from './layouts/AdminLayout';
 import AdminDashboard from './pages/adminpages/AdminDashboard';
 import AboutPage from './pages/adminpages/AboutPage';
+import Cart from './pages/frontpages/Cart';
 
 function App() { 
   return ( 
@@ -27,6 +28,7 @@ function App() {
       <Route path="/" element={<MainLayout/>} >
         <Route index element={<Dashboard />} /> 
         <Route path="product/:id" element={<ProductDetail/>} />
+        <Route path="/cart" element={<Cart/>} />
       </Route>
 
       <Route path="/admin" element={<AdminLayout />}> 

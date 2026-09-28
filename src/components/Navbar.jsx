@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"; 
+import { useCart } from "../context/CartContext";
 
 export default function Navbar(){
+    // mengambil total qty dari context useCart
+    const { totalQty } = useCart();
+
     return (
         <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center"> 
             {/* Logo */} 
@@ -20,7 +24,13 @@ export default function Navbar(){
                 </Link>
 
                 <Link to="/cart" className="hover:text-gray-200"> 
-                    Keranjang 
+                    Keranjang
+                    {/* tampilkan totalQty jika ada item di keranjang  */}
+                    {totalQty > 0 && (
+                        <span className=" bg-red-500 text-xs px-2 rounded-full">
+                            {totalQty}
+                        </span>
+                    )}
                 </Link> 
 
                 <Link to="/checkout" className="hover:text-gray-200"> 
